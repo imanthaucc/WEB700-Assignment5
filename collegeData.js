@@ -127,7 +127,7 @@ module.exports.updateStudent = function (studentData) {
             ...studentData,
             TA: studentData.TA === 'on' ? true : false // Handle checkbox input
         };
-
+        resolve();
         // Write the updated data back to students.json file
         fs.writeFile('./data/students.json', JSON.stringify(dataCollection.students, null, 2), (err) => {
             if (err) {
