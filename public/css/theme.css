@@ -1,0 +1,79 @@
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff; /* Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Navigation Brand */
+.navbar-brand {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    color: #333333; /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    color: #333333; /* Text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Full Page Gradient */
+body, html {
+    background: linear-gradient(to bottom, #5669d4, #ff6666); /* Gradient background */
+    overflow: auto; /* Ensure gradient covers entire page */
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #007bff; /* Solid background color */
+    border-color: #007bff; /* Border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Different color on hover */
+    border-color: #0056b3; /* Border color on hover */
+}
+
+/* Table Styles */
+.table-bordered {
+    border: 1px solid #dee2e6; /* Border color */
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6; /* Border color for table cells */
+}
+
+/* Table Cells in Odd Numbered Rows */
+.table tbody tr:nth-child(odd) td {
+    background-color: #f8f9fa; /* Background color */
+}
+
+/* All Heading Elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Google Font */
+    color: #333333; /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+/* All Anchor Elements */
+a {
+    color: #0c0f11; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #0056b3; /* Hover color */
+}
+
+/* Fieldset Legends */
+legend {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    color: #333333; /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+    padding: 10px 0; /* Padding top and bottom */
+}

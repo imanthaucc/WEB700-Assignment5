@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Students</h2>
+        <hr />
+
+        {{#if students.length}}
+            <div class="table-responsive">
+                <table class="table table-bordered"> <!-- Added table-bordered class for borders -->
+                    <thead>
+                        <tr>
+                            <th>Student Num</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Status</th>
+                            <th>Course ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each students}}
+                            <tr>
+                                <td>{{this.studentNum}}</td>
+                                <td><a href="/student/{{this.studentNum}}">{{this.firstName}} {{this.lastName}}</a></td>
+                                <td><a href="mailto:{{this.email}}">{{this.email}}</a></td>
+                                <td>{{this.address}}</td>
+                                <td>{{this.status}}</td>
+                                <td><a href="/students?course={{this.courseId}}">{{this.courseId}}</a></td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        {{else}}
+            <div class="col-md-12 text-center">
+                <strong>{{message}}</strong>
+            </div>
+        {{/if}}
+    </div>
+</div>
